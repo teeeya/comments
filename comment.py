@@ -13,8 +13,8 @@ for line in f:
 				print("\n**"+test[0]+"**: "+test[1].strip())
 			else :	
 				print("**"+test[0]+"**: "+test[1].strip() + "<br />")
-		elif "Test Steps" in test[0].strip() or "Pre-requisites" in test[0].strip():
-			print ("**" + test[0].strip()+ "**")
+		elif "Test Steps" in test[0].strip() or "Pre-requisites" in test[0].strip() or "Expected" in line or "Actual" in line:
+			print ("\n**" + test[0].strip()+ "**")
 	elif "." in line :
 		test = line.split(".")
 		print(test[0]+". "+test[1].strip()+ "<br />")
@@ -32,8 +32,8 @@ for line in f:
 				print("\n*"+test[0]+"*: "+test[1].strip())
 			else :
 				print("*"+test[0]+"*: "+test[1].strip())
-		elif "Test Steps" in test[0].strip() or "Pre-requisites" in test[0].strip():
-			print ("**" + test[0].strip()+ "**")		
+		elif "Test Steps" in test[0].strip() or "Pre-requisites" in test[0].strip() or "Expected" in line or "Actual" in line:
+			print ("\n*"+ test[0].strip()+ "**")		
 	elif "." in line :
 		test = line.split(".")
 		print("# "+test[1].strip())
