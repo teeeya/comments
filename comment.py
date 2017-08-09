@@ -18,6 +18,8 @@ for line in f:
 	elif "." in line :
 		test = line.split(".")
 		print(test[0]+". "+test[1].strip()+ "<br />")
+	elif "-" in line :
+		print(line.strip())
 	else :
 		print("**"+line.strip()+"**")
 
@@ -37,5 +39,7 @@ for line in f:
 	elif "." in line :
 		test = line.split(".")
 		print("# "+test[1].strip())
+	elif "-" in line :
+		print(line.strip())	
 	else :
 		print("*"+line.strip()+"*")
