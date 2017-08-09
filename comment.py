@@ -19,7 +19,7 @@ for line in f:
 		test = line.split(".")
 		print(test[0]+". "+test[1].strip()+ "<br />")
 	elif "-" in line :
-		print(line.strip())
+		print("-"+line.strip()+ "<br />")
 	else :
 		print("**"+line.strip()+"**")
 
