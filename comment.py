@@ -40,6 +40,6 @@ for line in f:
 		test = line.split(".")
 		print("# "+test[1].strip())
 	elif "-" in line :
-		print(line.strip())	
+		print("-"+line.strip())	
 	else :
 		print("*"+line.strip()+"*")
